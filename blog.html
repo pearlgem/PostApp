@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog h ye</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .custom-stroke {
+      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.644);
+    }
+  </style>
+
+  <body
+    class="min-h-screen w-full m-0 p-0 flex flex-col items-center py-10"
+    style="
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://wallpapers.com/images/hd/aesthetic-fall-floral-art-rtabqm9l75jf546n.jpg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    "
+  >
+    <h1 class="text-3xl font-bold mb-5 text-white" id="userName"></h1>
+
+    <div class="bg-white p-3 rounded-lg shadow-lg w-1/2">
+      <textarea
+        id="post-input"
+        placeholder="Write your post here... "
+        class="w-full p-2 border border-gray-300 text-black rounded-md mb-3"
+        rows="4"
+      >
+      </textarea>
+
+      <label class="block text-gray-600 font-medium mb-1">
+        Choose a Gradient:</label
+      >
+      <select
+        id="gradient-select"
+        class="w-full p-2 border border-gray-300 rounded-md mb-3"
+      >
+        <option value="from-pink-500 to-red-500">Pink h</option>
+        <option value="from-purple-400 to-indigo-600">Purple bhi h</option>
+        <option value="from-yellow-400 to-orange-500">ye wala bhi h</option>
+        <option value="from-blue-400 to-blue-700">Blue bhi h</option>
+        <option value="from-green-400 to-teal-500">Green ye wala bhi h</option>
+      </select>
+
+      <div
+        id="gradient-preview"
+        class="w-full h-14 rounded-md mb-3 bg-gradient-to-r from-gray-300"
+      ></div>
+
+      <button
+        id="post-button"
+        class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+      >
+        Post
+      </button>
+    </div>
+
+    <div id="post-container" class="w-1/2 mt-5 space-y-4"></div>
+
+    <!-- ```````````````````````````````this is script area -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"
+    ></script>
+  </body>
+</html>
